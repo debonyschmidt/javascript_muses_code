@@ -1,0 +1,347 @@
+// Level2
+
+/*
+    Introduction
+    ============
+
+    Welcome to level 2! It is time to interact with HTML.
+
+    Hyper Text Markup Language (HTML) files are the backbone of the internet.
+    Every website you visit is loaded first as an HTML file.
+
+    We won't talk too much about HTML today. What you need to know is that HTML
+    files function as a sort of skeleton for your page. Our index.html file
+    combines all the files from this project together so that you can open them
+    in your web browser.
+
+    This project has a file called index.html. At the bottom of index.html you
+    will see the following tag:
+
+    <script src="js/level1.js"></script>
+
+    That is how you have been running the level1.js file. Now change level1.js
+    to this file — level2.js.
+
+    Now you are ready to start!
+*/
+
+/*
+    Arrays
+    ======
+
+    An array is an ordered list of values. It can keep any number of values
+    inside. And also any type of values — numbers, strings, objects.
+
+    Example:
+
+    let animals = ['cat', 'dog', 'horse'];
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    let numbers = [1, 2, 8, 19];
+*/
+
+// TODO: Create your own array, named favouriteFood, and write in a couple of
+// things you like.
+
+// let favouriteFood = ["sweet potato", "avocado", "Feijoada"];
+
+
+/*
+    Array Length
+    ============
+
+    We can easily check how many items we have in our array with a property:
+    '.length'
+
+    Example:
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    console.log(randomThings.length); // We will get 4.
+*/
+
+// TODO: Check how many values you have in your array favouriteFood.
+// console.log the result.
+
+// let favouriteFood = ["sweet potato", "avocado", "Feijoada"];
+// console.log(favouriteFood.length);
+
+
+/*
+    Array Usage
+    ===========
+
+    It's useful to keep all of these values in one place. But what if we want
+    to use only 1 item from the array?
+
+    We can get them out using 'bracket notation'. Thanks to a guy named Edsger
+    Dijkstra*, array indices start counting from 0. The usage looks like this.
+
+    Example:
+
+    let randomThings = [2, 'book', 'today is Saturday', 10];
+    let firstItem = randomThings[0];
+    let secondItem = randomThings[1]; and so on
+
+    * https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html
+*/
+
+// TODO: Get third element from your array favouriteFood and console.log it.
+
+
+// let favouriteFood = ["sweet potato", "avocado", "Feijoada"];
+// let firstItem = favouriteFood[0];
+// let secondItem = favouriteFood[1];
+// console.log(secondItem);
+
+
+/*
+    Changing Values in Arrays
+    =========================
+
+    We also can replace values inside of the arrays by assigning a new value to
+    a specific index.
+
+    Example:
+
+    let animals = ['cat', 'dog', 'horse'];
+
+    // let's replace 'dog' with 'fish'
+    animals[1] = 'fish';
+
+    // now our animals array will be ['cat', 'fish', 'horse']
+*/
+
+// TODO: Take your array favouriteFood and replace the first value with anything
+// else.
+// console.log the whole array to check.
+// Don't forget, index positions start from 0!
+
+// let favouriteFood = ["sweet potato", "avocado", "Feijoada"];
+// favouriteFood[1] = "fish&chiips";
+// console.log(favouriteFood);
+
+
+/*
+    Array.push()
+    ============
+
+    If you want to add new values to an existing array you can use the method
+    '.push()'. Push will add a new value to the end of the array.
+
+    Example:
+
+    let animals = ['cat', 'dog', 'horse'];
+    animals.push('rabbit');
+
+    // animals will be ['cat', 'dog', 'horse','rabbit']
+*/
+
+// TODO: Let's extend your list of favouriteFood and add one more value to it.
+// console.log list your favouriteFood and check it.
+
+// let favouriteFood = ["sweet potato", "avocado", "Feijoada"];
+// favouriteFood.push("pizza");
+// console.log(favouriteFood);
+
+
+/*
+    Note about constant Arrays
+    ==========================
+
+    An array is what is known as a "reference type".  What this means is that
+    even if an array is declared using 'const', the values *inside* that array
+    can still be changed; only the array itself cannot be overwritten.
+
+    Example:
+
+    const animals = ['cat', 'dog', 'horse'];
+
+    // These are both legal, and works the same way as when animals is a variable:
+    animals[1] = 'fish';
+    animals.push('rabbit');
+
+    // This is illegal, and will return an error the same as changing any constant:
+    animals = [ 'mouse', 'elephant' ];
+ */
+
+// TODO: Repeat the previous exercises with your arrays defined as constants,
+// to see what happens.
+
+// const favouriteFood = ["sweet potato", "avocado", "Feijoada"];
+// favouriteFood[1] = "Fish&chips";
+// favouriteFood.push("Pizza");
+// console.log(favouriteFood);
+
+
+/*
+    Loops
+    =====
+
+    People have always been lazy, but sometimes it moves progress forward! We
+    don't like to repeat the same boring actions again and again, so we look
+    for ways to avoid it.
+
+    Programming is the same. For example, if I want to print 'JavaScript is
+    awesome!' 10 times, what are my options? Of course, I can type ten lines of
+    code repeating the same instruction, but I can also tell the computer to
+    repeat it instead of me writing it 10 times!
+
+    For this we have loops.
+
+    Each loop should have three main things:
+    - a starting point
+    - a condition (finishing point)
+    - a counter (a step)
+
+    If you miss one of these, you can get into an infinite loop!
+
+    Let's look into different looping structures.
+*/
+
+
+/*
+    While Loops
+    ===========
+
+    'While' loop will do an action forever until some condition is met.
+
+    Example:
+
+    // starting point
+    let number = 0;
+
+    while (number < 10) {
+      // 'less than 10'' is a condition (finishing point)
+
+      console.log('JavaScript is awesome!');
+
+      number = number + 1;
+      // + 1 is a counter/size of the step
+    }
+*/
+
+// TODO: Using a 'while loop', tell your computer to log the numbers from
+// ten to one.
+
+
+// let number = 10;
+
+// while (number >= 1) {
+//     console.log(number);
+//     number = number - 1;
+// }
+
+
+/*
+    For Loops
+    =========
+
+    'For loops are very similar to the 'while loop'. In a for loop, you
+    declare a counter in the statement.
+
+    Example:
+
+    let i;
+    for (i = 0; i <= 5; i = i + 1) {  // (starting point; condition; step)
+      console.log('Purr');
+    }
+*/
+
+// TODO: Log every 3rd number from three to 22 using a 'for loop'.
+
+// let i;
+// for (i = 3; i <= 22; i = i + 3){
+//     console.log(i);
+// }
+
+
+
+/*
+    Iterating Through Arrays
+    ========================
+
+    Now we know about loops, I want to use each value from my animal list
+    and express my love for each. How shall I do it?
+
+    We can use a 'for loop' to iterate through our array and get each value
+    from it.
+
+    Note: i++ is another way of writing i = i+1.
+
+    Example:
+
+    const animals = ['cats', 'dogs', 'horses'];
+    for(let i = 0; i < animals.length; i++){
+        console.log('I love ' + animals[i]);
+    }
+*/
+
+// TODO: Try it out with your favouriteFood array.
+
+// const favouriteFood = ["Sweet Potato", "Feijoada", "Coxinha", "Fish&Chips"];
+
+// for(let i = 0; i < favouriteFood.length; i++){
+//     console.log("I love: "+favouriteFood[i]);
+// }
+
+
+
+/*
+    Loops and Logic
+    ===============
+
+    Let's bring loops together with the if/else statements we learned in
+    level 1, and make something interesting.
+
+    Let's count from 10 to 0 and log all the numbers. But, when we get to the
+    middle (5) print 'Woohoo, we are in the middle!'.
+
+    Example:
+
+    for (let i = 10; i >= 0; i = i - 1) {
+        if (i === 5) {
+            console.log('WooHoo, we are in the middle!');
+        } else {
+            console.log(i);
+        }
+    }
+*/
+
+// TODO: Time has come for a classic exercise — 'FizzBuzz'.
+
+// Count from 1 to 50 and print the numbers out:
+//
+// * If a number is a multiple of three, print 'Fizz'.
+// * If it's a multiple of 5, print 'Buzz'.
+// * If it's a multiple of 3 and 5, print 'FizzBuzz'.
+// * For everything else, print the number itself.
+
+// P.S. You may wish to use arithmetic operator remainder (%):
+// It calculates the remainder when dividing.
+//
+// 10 % 3 = 1 — in 10 we have 3*3 + 1
+// 16 % 4 = 0 — in 16 we have 4*4
+// 19 % 4 = 3 — in 19 we have 4*4 + 3 etc
+
+
+// for (let i = 1; i <= 50; i++) {
+//     if (i % 3 === 0 && i % 5 === 0){
+//         console.log(i + " FizzBuzz");
+//     } else if (i % 5 === 0) {
+//         console.log(i + " Buzz");
+//     } else if (i % 3 === 0){
+//         console.log(i + " Fizz")
+//     } else {
+//         console.log(i);
+//     }
+    
+// }
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////
+// Congratulations! You have finished Part 2 of JavaScript Basics!        //
+// Stand up, stretch your legs, and celebrate your achievement.           //
+// The next step will be following up the instructions in level3.js file. //
+////////////////////////////////////////////////////////////////////////////
