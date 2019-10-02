@@ -1,5 +1,3 @@
-const behaviour = document.letterToSanta.goodVSnaughty.value;
-
 function nameValidationError(value) {
 
     if (value === "") {
@@ -14,6 +12,7 @@ function nameValidationError(value) {
     } else if (/^[A-z]+$/.test(value) === false) {
         return("Please, enter only letters in the name field.");    
     }
+    return '';
         
 }
 
@@ -23,6 +22,7 @@ function cityValidationError(value) {
         return ("City is required");
         
     }
+    return '';
 }
 
 function descriptionValidationError(value) {
@@ -39,7 +39,10 @@ function descriptionValidationError(value) {
     } else if (/^[A-z0-9]+$/.test(value) === false) {
         return("Please, enter only letters in the name field.");    
     }
+    return '';
 }
+
+
 function validateForm(event) {
     const name = document.letterToSanta.name.value;
     const city = document.letterToSanta.city.value;
@@ -51,20 +54,20 @@ function validateForm(event) {
         description: descriptionValidationError(description),
     };
 
-    nameValidationError (name);
-    cityValidationError(city);
-    descriptionValidationError(description);
-
     handleErrors(errors);
     event.preventDefault();
 }
 
 function handleErrors(errors) {
     let errorsCount = 0;
+    let onSuccessWindow = document.querySelector(`.on-success`);
 
     Object.keys(errors)
     .forEach(function (key) {
-        console.log(errors[key]);
+        document.querySelector(`.letterToSantaForm [name="${key}"]`).classList.add('error');
+        document.querySelector(`.letterToSantaForm [name="${key}"]`).value = '';
+        document.querySelector(`.errorsBlock [class="${key}"]`).innerHTML = errors[key];
+
         errorsCount = errorsCount + errors[key].length;
     });
 

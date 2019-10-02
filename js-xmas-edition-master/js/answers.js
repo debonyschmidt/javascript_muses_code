@@ -53,6 +53,7 @@ function handleErrors(errors) {
       }
       console.log(errors[key]);
       errorsCount = errorsCount + errors[key].length;
+      console.log(errorsCount);
     });
 
   if (errorsCount < 1) {

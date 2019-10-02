@@ -336,7 +336,7 @@ These comprise all of the validations for our form.
   1. We will need to use `document.querySelector` to target the element on
   the page, which we can do inside our `forEach` loop. So we are targeting
   the whole form and then fields with specific names (that our key will represent 
-  `[name="${key}"]`). This will look like:
+  `[name="${key}"]`). This will look like':
 
   ```
   document.querySelector(`[name="${key}"]`)
